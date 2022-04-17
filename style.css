@@ -1,0 +1,28 @@
+.title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+.input{
+    text-align: center;
+}
+.grid-container{
+    align-items: center;
+    display:flex;
+    height: 500px;
+    
+    flex-direction: column;
+}
+
+.row-container{
+    display: flex;
+    width: 500px;
+    flex:1 1 auto;
+}
+
+.grid-element{
+    background-color: yellow;
+    border: 1px solid Black;
+    flex:1 1 auto;
+}
