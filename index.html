@@ -9,15 +9,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title">Etch-a-Sketch</div>
-    <div class="input">
-        <input type="range" min="2" max="64" value="6" id="grid-size-input">
-    </div>
-    <div class="output">
-        6 x 6
-    </div>
-    <div class="grid-container">
-
+    <div class="big-container">
+        <div class="buttons">
+            <button value="Draw">Draw</button>
+            <button value="Erase">Erase</button>
+            <!-- <button calue="Clear">Clear</button> -->
+            <div class="input">
+                <input type="range" min="2" max="64" value="6" id="grid-size-input">
+            </div>
+            <div class="output">
+                6 x 6
+            </div>
+        </div>
+        <div class="aux">
+            <div class="title">Etch-a-Sketch</div>
+            <div class="grid-container"></div>
+        </div>
     </div>
 
     

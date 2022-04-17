@@ -1,5 +1,6 @@
 const gridContainer  = document.querySelector(".grid-container");
 let clicked;
+let color="black";
 document.addEventListener('mousedown', e => clicked = e.buttons);
 document.addEventListener('mouseup', e => clicked = e.buttons);
 
@@ -38,7 +39,7 @@ const gridItems = Array.from(document.querySelectorAll('.grid-element'));
     });
 
 function changeColor(item){
-    item.style.backgroundColor = "black";
+    item.style.backgroundColor = color  ;
 }
 
 function drawGrid(){
@@ -60,6 +61,16 @@ function drawGrid(){
         });
     });
 }
+
+const buttons = Array.from(document.querySelectorAll(".buttons button"));
+
+buttons.forEach(button =>{
+    button.addEventListener("click", e =>{
+        if(e.target.value == "Draw") color = "black";
+        if(e.target.value == "Erase") color = "white";
+        if(e.target.value == "Clear") drawGrid();
+    });
+});
 
 
 
