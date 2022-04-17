@@ -1,3 +1,6 @@
+body{
+    background-color: antiquewhite;
+}
 .title{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -6,6 +9,11 @@
 }
 .input{
     text-align: center;
+}
+.output{
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
 }
 .grid-container{
     align-items: center;
@@ -22,7 +30,8 @@
 }
 
 .grid-element{
-    background-color: yellow;
+    background-color: white;
+    user-select: none;
     border: 1px solid Black;
     flex:1 1 auto;
 }
